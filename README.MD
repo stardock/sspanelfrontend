@@ -35,7 +35,7 @@ https://blog.csdn.net/zhaokaiqiang1992/article/details/41349819
      * 将  
      root /www/wwwroot/ss.naoxiaogen.com（此处为你的域名）改为  
      root /www/wwwroot/ss.naoxiaogen.com/public  
-     在配置文件结尾添加：
+     在配置文件结尾添加：  
      `location / {`  
      `try_files $uri $uri/ /index.php$is_args$args;`  
      `}`  
