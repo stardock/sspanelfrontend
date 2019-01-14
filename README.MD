@@ -81,10 +81,12 @@ https://blog.csdn.net/zhaokaiqiang1992/article/details/41349819
 
 * 设置定时任务  
   执行 crontab -e命令, 添加以下四条  
-  `30 22 * * * php /网站目录/xcat sendDiaryMail`  
-  `0 0 * * * php -n /网站目录/xcat dailyjob`  
-  `*/1 * * * * php /网站目录/xcat checkjob`  
-  `*/1 * * * * php /网站目录/xcat syncnode`  
+  ```
+  30 22 * * * php /网站目录/xcat sendDiaryMail  
+  0 0 * * * php -n /网站目录/xcat dailyjob  
+  */1 * * * * php /网站目录/xcat checkjob  
+  */1 * * * * php /网站目录/xcat syncnode  
+  ```
 
 
 
