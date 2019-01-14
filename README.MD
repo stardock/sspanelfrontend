@@ -48,6 +48,8 @@ https://blog.csdn.net/zhaokaiqiang1992/article/details/41349819
 * 在**禁用函数**一栏找到 system proc_open proc_get_status 去除它  
 * 在**性能调整**中，把 PHP 运行模式设置为 静态  
 * 在**配置修改**中 按 Ctrl+F 搜索 display_errors = 改为 Off 后保存  
+在宝塔面板网站设置中  
+* 取消防跨站攻击
 
 ## 安装Nimaqu sspanel   
 * 下载sspanel  
