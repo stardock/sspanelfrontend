@@ -1,17 +1,15 @@
 https://blog.csdn.net/zhaokaiqiang1992/article/details/41349819  
 
-##准备阶段
+## 准备阶段
 
 * 挑选一台合适的vps，不要用废品vps来试教程。  
 * 对vps进行优化，安装锐速或者是bbr这类的vps加速工具。  
 * 系统要求：Centos7  
 
-##安装宝塔管理面板  
+## 安装宝塔管理面板  
 * 使用putty工具登陆vps  
 * 安装宝塔一建端  
-```
-yum install -y wget && wget -O install.sh http://download.bt.cn/install/install.sh && sh install.sh
-```  
+`yum install -y wget && wget -O install.sh http://download.bt.cn/install/install.sh && sh install.sh`
                   ![](/data/bt1.jpg)  
                   * 等待安装完成（官网说只要两分钟就可以完成，这个还是要根据服务器性能来确定，我的装了大概4分钟）  
                   * 安装完成后，会提示后台登录地址和管理员账号、密码等信息，最好保存下来，然后打开浏览器进行登录。  
@@ -23,7 +21,7 @@ yum install -y wget && wget -O install.sh http://download.bt.cn/install/install.
                   然后，坐下来休息一下，等待安装完成吧(*^__^*)  
                   ![](data/bt4.jpg)
 
-##新建网站
+## 新建网站
 * 点击“网站”–“添加站点”  
 ![](/data/bt4.jpg)  
 * 按照提示创建网站
@@ -47,7 +45,7 @@ yum install -y wget && wget -O install.sh http://download.bt.cn/install/install.
          ![](/data/bt8.jpg)  
          ![](/data/bt9.jpg)  
 
-##安装Nimaqu sspanel   
+## 安装Nimaqu sspanel   
 
 
 
