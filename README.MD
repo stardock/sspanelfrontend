@@ -28,7 +28,7 @@ https://blog.csdn.net/zhaokaiqiang1992/article/details/41349819
 ![](/data/bt5.jpg)  
 * 配置nginx  
 网站创建成功后，访问域名可以看到创建成功的提示（前提是你绑定的域名也已经解析到当前vps的ip上了，如果没有，请进行解析），接下来，我们进行一些配置。  
-   * 点击“网站”–“修改”，进入nginx配置界面  
+ * 点击“网站”–“修改”，进入nginx配置界面  
     ![](/data/bt6.jpg)
    * 找到配置文件
     ![](/data/bt7.jpg)
