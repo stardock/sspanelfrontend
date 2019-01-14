@@ -43,8 +43,23 @@ https://blog.csdn.net/zhaokaiqiang1992/article/details/41349819
      ![](/data/bt8.jpg)  
      ![](/data/bt9.jpg)  
 
-## 安装Nimaqu sspanel   
+#### 额外事项
+在宝塔面板中找到php，点击设置  
+* 在**禁用函数**一栏找到 system proc_open proc_get_status 去除它  
+* 在**性能调整**中，把 PHP 运行模式设置为 静态  
+* 在**配置修改**中 按 Ctrl+F 搜索 display_errors = 改为 Off 后保存  
 
+## 安装Nimaqu sspanel   
+* 下载sspanel  
+  * 进入我们的网站跟目录
+  `cd  /www/wwwroot/[网站目录]`
+  * 进行安装  
+  `yum install git –y`  
+  `git clone -b master https://github.com/Anankke/ss-panel-v3-mod_Uim.git tmp && mv tmp/.git . && rm -rf tmp && git reset --hard`  
+  `chown -R root:root *`  
+  `chmod -R 755 *`  
+  `chown -R www:www storage`  
+  `php composer.phar install`
 
 
 
