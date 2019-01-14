@@ -70,7 +70,26 @@ https://blog.csdn.net/zhaokaiqiang1992/article/details/41349819
   `cd /网站目录`  
   `cp config/.config.php.example config/.config.php`  
   `vi config/.config.php`    //每一个配置项都认真填写  
-  `service nginx restart`
+  `service nginx restart`  
+
+* 创建管理员并同步用户  
+  `php xcat createAdmin          //创建管理员`  
+  `php xcat syncusers            //同步用户`  
+  `php xcat initQQWry            //下载IP解析库`  
+  `php xcat resetTraffic         //重置流量`  
+  `php xcat initdownload         //下载ssr程式`  
+
+* 设置定时任务  
+  执行 crontab -e命令, 添加以下四条  
+  `30 22 * * * php /网站目录/xcat sendDiaryMail`  
+  `0 0 * * * php -n /网站目录/xcat dailyjob`  
+  `*/1 * * * * php /网站目录/xcat checkjob`  
+  `*/1 * * * * php /网站目录/xcat syncnode`  
+
+
+
+
+
 
 
 
