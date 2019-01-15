@@ -63,7 +63,7 @@ https://blog.csdn.net/zhaokaiqiang1992/article/details/41349819
   `chmod -R 755 *`  
   `chown -R www:www storage`  
   `php composer.phar install`  
-  * 使用MyphpAdmin工具建立数据库ss,并建立用户sspanel以及密码1234。 赋予sspanel在ss数据库的完全访问权限。  
+  ~~* 使用MyphpAdmin工具建立数据库ss,并建立用户sspanel以及密码1234。 赋予sspanel在ss数据库的完全访问权限。  ~~
   然后将 `/网站目录/sql/glzjin_all.sql` 下的数据库导入到ss  
 
 * 配置 sspanel  
