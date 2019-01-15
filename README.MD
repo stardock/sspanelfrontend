@@ -86,7 +86,12 @@ https://blog.csdn.net/zhaokaiqiang1992/article/details/41349819
   0 0 * * * php -n /网站目录/xcat dailyjob  
   */1 * * * * php /网站目录/xcat checkjob  
   */1 * * * * php /网站目录/xcat syncnode  
-  ```
+  ```  
+
+* 登录网站  
+  * 确认网站是否可以正常登录  
+  * 进入管理面板 > 服务器。只有一个服务器的用户，添加当前服务器即可  
+  * 进入用户管理，查看是否可以正常显示用户列表  
 
 
 
