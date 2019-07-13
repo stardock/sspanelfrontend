@@ -59,7 +59,7 @@
   `yum install git –y`  
   `git clone -b master https://github.com/Anankke/ss-panel-v3-mod_Uim.git tmp && mv tmp/.git . && rm -rf tmp && git reset --hard`  
     * 注意，`sspanel`的开发团队对目录文件进行了重写。想要使用最新版的`sspanel`请访问  
-    `111`  
+    `https://github.com/Anankke/SSPanel-Uim/wiki/%E5%89%8D%E7%AB%AF%E5%AE%89%E8%A3%85`  
     或者使用如下命令使用旧版的`sspanel`  
     `git checkout 6e7a04f`  
   `chown -R root:root *`  
