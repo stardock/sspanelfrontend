@@ -60,12 +60,26 @@
   `git clone -b master https://github.com/Anankke/ss-panel-v3-mod_Uim.git tmp && mv tmp/.git . && rm -rf tmp && git reset --hard`  
     * 注意，`sspanel`的开发团队对目录文件进行了重写。想要使用最新版的`sspanel`请访问  
     https://github.com/Anankke/SSPanel-Uim/wiki/%E5%89%8D%E7%AB%AF%E5%AE%89%E8%A3%85  
-    或者使用如下命令使用旧版的`sspanel`  
-    `git checkout 6e7a04f`  
+    或者使用如下命令使用旧版的`sspanel`，该版本已经实现后台直接添加新用户功能，推荐使用。并且该版本是可进行快速安装的最后一个`新`版本  
+    `git checkout 848065d`  
   `chown -R root:root *`  
   `chmod -R 755 *`  
   `chown -R www:www storage`  
   `php composer.phar install`  
+      * 关于新版界面问题，不喜欢的小伙伴，请将`../app/Controllers/HomeController.php`中的代码修改如下  
+      ```
+              return $this->view()  
+            ->assign('geetest_html', $GtSdk)  
+            ->assign('login_token', $login_token)  
+            ->assign('login_number', $login_number)  
+            ->assign('telegram_bot', Config::get('telegram_bot'))  
+            ->assign('enable_logincaptcha', Config::get('enable_login_captcha'))  
+            ->assign('enable_regcaptcha', Config::get('enable_reg_captcha'))  
+            ->assign('base_url', Config::get('baseUrl'))  
+            ->assign('recaptcha_sitekey', $recaptcha_sitekey)  
+            ->display('indexold.tpl');  
+      }  
+      ```  
   ~~* 使用MyphpAdmin工具建立数据库ss,并建立用户sspanel以及密码1234。 赋予sspanel在ss数据库的完全访问权限。~~  
   然后将 `/网站目录/sql/glzjin_all.sql` 下的数据库导入到ss  
 
