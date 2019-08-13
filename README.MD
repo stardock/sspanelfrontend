@@ -60,7 +60,7 @@
   `git clone -b master https://github.com/Anankke/ss-panel-v3-mod_Uim.git tmp && mv tmp/.git . && rm -rf tmp && git reset --hard`  
     ~~* 注意，`sspanel`的开发团队对目录文件进行了重写。想要使用最新版的`sspanel`请访问~~  
     ~~https://github.com/Anankke/SSPanel-Uim/wiki/%E5%89%8D%E7%AB%AF%E5%AE%89%E8%A3%85~~  
-   * 注意，`sspanel`的开发团队对目录文件进行了重写。想要使用最新版的`sspanel`请  
+   * 注意，`sspanel`的开发团队对目录文件进行了重写。想要使用最新版的`sspanel`请 (需要系统>1.5G SWAP)  
    ```  
    wget https://getcomposer.org/installer -O composer-setup.php  
    php composer-setup.php install  
