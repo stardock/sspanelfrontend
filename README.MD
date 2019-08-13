@@ -66,14 +66,16 @@
    php composer-setup.php install  
    php composer.phar install  
    ```  
-    
    或者使用如下命令使用旧版的`sspanel`，该版本已经实现后台直接添加新用户功能，推荐使用。并且该版本是可进行快速安装的最后一个`新`版本  
-   `git reset --hard`  
-   `git checkout 848065d`  
-  `chown -R root:root *`  
-  `chmod -R 755 *`  
-  `chown -R www:www storage`  
-  `php composer.phar install`  
+   ```  
+   git reset --hard  
+   git checkout 848065d  
+   chown -R root:root *  
+   chmod -R 755 *  
+   chown -R www:www storage  
+   php composer.phar install  
+   ```
+   
       * 关于新版界面问题，不喜欢的小伙伴，请将`../app/Controllers/HomeController.php`中的代码修改如下  
       ```
               return $this->view()  
