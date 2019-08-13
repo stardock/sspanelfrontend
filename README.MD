@@ -77,8 +77,8 @@
    ```  
    
      * 关于新版界面问题，不喜欢的小伙伴，请将`./config/routes.php`中的代码修改如下  
-      ```  
-      // Home  
+     ```  
+     // Home  
      $app->post('/spay_back', App\Services\Payment::class . ':notify');  
      $app->get('/spay_back', App\Services\Payment::class . ':notify');  
      $app->get('/', App\Controllers\HomeController::class . ':indexold');  
@@ -92,8 +92,8 @@
      $app->post('/telegram_callback', App\Controllers\HomeController::class . ':telegram');  
 
      ```  
-  ~~* 使用MyphpAdmin工具建立数据库ss,并建立用户sspanel以及密码1234。 赋予sspanel在ss数据库的完全访问权限。~~  
-  然后将 `/网站目录/sql/glzjin_all.sql` 下的数据库导入到ss  
+     ~~* 使用MyphpAdmin工具建立数据库ss,并建立用户sspanel以及密码1234。 赋予sspanel在ss数据库的完全访问权限。~~  
+     然后将 `/网站目录/sql/glzjin_all.sql` 下的数据库导入到ss  
 
 * 配置 sspanel  
   `cd /网站目录`  
