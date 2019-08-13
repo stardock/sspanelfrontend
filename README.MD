@@ -74,22 +74,24 @@
    chmod -R 755 *  
    chown -R www:www storage  
    php composer.phar install  
-   ```
+   ```  
    
-      * 关于新版界面问题，不喜欢的小伙伴，请将`../app/Controllers/HomeController.php`中的代码修改如下  
-      ```
-              return $this->view()  
-            ->assign('geetest_html', $GtSdk)  
-            ->assign('login_token', $login_token)  
-            ->assign('login_number', $login_number)  
-            ->assign('telegram_bot', Config::get('telegram_bot'))  
-            ->assign('enable_logincaptcha', Config::get('enable_login_captcha'))  
-            ->assign('enable_regcaptcha', Config::get('enable_reg_captcha'))  
-            ->assign('base_url', Config::get('baseUrl'))  
-            ->assign('recaptcha_sitekey', $recaptcha_sitekey)  
-            ->display('indexold.tpl');  
-      }  
+     * 关于新版界面问题，不喜欢的小伙伴，请将`./config/routes.php`中的代码修改如下  
       ```  
+      // Home  
+     $app->post('/spay_back', App\Services\Payment::class . ':notify');  
+     $app->get('/spay_back', App\Services\Payment::class . ':notify');  
+     $app->get('/', App\Controllers\HomeController::class . ':indexold');  
+     $app->get('/indexold', App\Controllers\HomeController::class . ':indexold');  
+     $app->get('/404', App\Controllers\HomeController::class . ':page404');  
+     $app->get('/405', App\Controllers\HomeController::class . ':page405');  
+     $app->get('/500', App\Controllers\HomeController::class . ':page500');  
+     $app->post('/notify', App\Controllers\HomeController::class . ':notify');  
+     $app->get('/tos', App\Controllers\HomeController::class . ':tos');  
+     $app->get('/staff', App\Controllers\HomeController::class . ':staff');  
+     $app->post('/telegram_callback', App\Controllers\HomeController::class . ':telegram');  
+
+     ```  
   ~~* 使用MyphpAdmin工具建立数据库ss,并建立用户sspanel以及密码1234。 赋予sspanel在ss数据库的完全访问权限。~~  
   然后将 `/网站目录/sql/glzjin_all.sql` 下的数据库导入到ss  
 
