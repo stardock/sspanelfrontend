@@ -131,27 +131,23 @@
 
 1.首先请您自己在您的站点上注册一个新用户  
 2.然后在管理员后台面板编辑一下用户。按照图上的指示编辑，然后保存  
-
-2016年11月3日更新：自定义混淆方式可以并且推荐使用 tls1.2_ticket_auth .
-qq%e6%88%aa%e5%9b%be20161031175714
-
-3.然后添加一个节点。看图上的指示。
-qq%e6%88%aa%e5%9b%be20161031180223
-
-4.然后修改面板的 config/.config.php ，确保里面如下两段 已经按照你的意愿设置并且和后端上 userapiconfig.py 里的对应配置项一致。
-
+2016年11月3日更新：自定义混淆方式可以并且推荐使用 tls1.2_ticket_auth  
+![](/data/s1.png)   
+3.然后添加一个节点。看图上的指示  
+![](/data/s2.png)   
+4.然后修改面板的 config/.config.php ，确保里面如下两段 已经按照你的意愿设置并且和后端上 userapiconfig.py 里的对应配置项一致  
+```  
 #多用户混淆参数后缀
 $System_Config['mu_suffix']='zhaoj.in';
-
 #多用户混淆参数表达式，%5m代表取用户特征 md5 的前五位，%id 代表用户id,%suffix 代表上面这个后缀。
 $System_Config['mu_regex']='%5m%id.%suffix';
-
-对应后端上的：
-
+```  
+对应后端上的：  
+```  
 MU_SUFFIX = 'zhaoj.in'
 MU_REGEX = '%5m%id.%suffix'
-
-5.添加完毕。
+```  
+5.添加完毕  
 
 
 
