@@ -4,59 +4,59 @@ Notes:
 The routes.php has been move to app/ since the update committed on Dec 18, 2019 
 
 
-0x32 安装网站程序
+0x32 安装网站程序  
 
-如果想使用 master 分支请把 git clone -b dev 中的 dev 改为 master
+如果想使用 master 分支请把 git clone -b dev 中的 dev 改为 master  
 
-请自行将 你的文件夹名 替换为相应内容。
+请自行将 你的文件夹名 替换为相应内容。  
 
-在机器 Shell 上执行以下命令：
+在机器 Shell 上执行以下命令：  
 
-cd /www/wwwroot/你的文件夹名
-git clone -b dev https://github.com/Anankke/SSPanel-Uim.git ${PWD}
-git config core.filemode false
-wget https://getcomposer.org/installer -O composer.phar
-php composer.phar
-php composer.phar install
-chmod -R 755 ${PWD}
-chown -R www:www ${PWD}
-ln -s ${PWD}/sql/glzjin_all.sql /www/backup/database/
+cd /www/wwwroot/你的文件夹名  
+git clone -b dev https://github.com/Anankke/SSPanel-Uim.git ${PWD}  
+git config core.filemode false   
+wget https://getcomposer.org/installer -O composer.phar  
+php composer.phar  
+php composer.phar install  
+chmod -R 755 ${PWD}  
+chown -R www:www ${PWD}  
+ln -s ${PWD}/sql/glzjin_all.sql /www/backup/database/  
 
-0x33 配置网站设置
+0x33 配置网站设置  
 
-点击 网站 最右侧的设置，在 网站目录 里取消 防跨站攻击，运行目录里面选择 /public，点击 保存。
+点击 网站 最右侧的设置，在 网站目录 里取消 防跨站攻击，运行目录里面选择 /public，点击 保存。  
 
-在 伪静态 中填入下面内容：
+在 伪静态 中填入下面内容：  
 
-location / {
-    try_files $uri /index.php$is_args$args;
-}
+location / {  
+    try_files $uri /index.php$is_args$args;  
+}  
+ 
+点击 保存 生效。  
+0x34 导入初始数据库  
 
-点击 保存 生效。
-0x34 导入初始数据库
+点击删库塔菜单的 数据库 按钮，找到你刚 Link 的数据库，点击导入。  
 
-点击删库塔菜单的 数据库 按钮，找到你刚 Link 的数据库，点击导入。
+导入界面会出现 glzjin_all.sql，直接导入。  
+0x35 配置网站程序  
 
-导入界面会出现 glzjin_all.sql，直接导入。
-0x35 配置网站程序
+在机器 Shell 上执行以下命令：  
 
-在机器 Shell 上执行以下命令：
+cd /www/wwwroot/你的文件夹名/  
+cp config/.config.example.php config/.config.php  
+cp config/appprofile.example.php config/appprofile.php  
+nano config/.config.php  
 
-cd /www/wwwroot/你的文件夹名/
-cp config/.config.example.php config/.config.php
-cp config/appprofile.example.php config/appprofile.php
-nano config/.config.php
+请按照自己的需求修改 config/.config.php，配置项比较多可以以后再改。为了下一步的正确执行请先务必确保数据库连接信息正确。  
 
-请按照自己的需求修改 config/.config.php，配置项比较多可以以后再改。为了下一步的正确执行请先务必确保数据库连接信息正确。
+数据库设置  
 
-数据库设置
-
-虽然并未完成所有配置，但是这个时候网站就可以打开了。
+虽然并未完成所有配置，但是这个时候网站就可以打开了。  
 
 
-0x36 创建管理员并同步用户  
+0x36 创建管理员并同步用户    
 
-依次执行以下命令：  
+依次执行以下命令：   
 
 php xcat User createAdmin  
 php xcat User resetTraffic  
