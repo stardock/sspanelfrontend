@@ -3,6 +3,8 @@ rm
 Notes:  
 The routes.php has been move to app/ since the update committed on Dec 18, 2019 
 
+74a1afa
+
 
 0x32 安装网站程序  
 
