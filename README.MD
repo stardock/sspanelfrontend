@@ -3,7 +3,16 @@ rm
 Notes:  
 The routes.php has been move to app/ since the update committed on Dec 18, 2019 
 
-74a1afa
+The working fine commit number:  
+```  
+5801a62 HEAD@{0}: pull: Fast-forward
+f38daf7 HEAD@{1}: checkout: moving from 78df3dacc56170f4ac33d27623c99767ac85b357 to dev
+78df3da HEAD@{2}: checkout: moving from 74a1afac36331ab972d62e8ed74bacdddc1ca0a0 to 78df3da
+74a1afa HEAD@{3}: checkout: moving from dev to 74a1afa
+f38daf7 HEAD@{4}: pull: Fast-forward
+74a1afa HEAD@{5}: pull: Fast-forward
+d6861ec
+```  
 
 
 0x32 安装网站程序  
