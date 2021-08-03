@@ -1,5 +1,19 @@
 rm
+changes log  
+```  
+Updating 822d3cb..79bdaf8
+error: Your local changes to the following files would be overwritten by merge:
+        app/routes.php
+        public/images/bg.jpg
+        resources/views/material/index.tpl
+        src/Models/User.php
+        src/Services/Payment.php
+Please, commit your changes or stash them before you can merge.
+Aborting
+```  
 
+
+update log  
 ```  
 [root@v167712 vs.stardock.cn]# git reflog
 5801a62 HEAD@{0}: pull: Fast-forward
