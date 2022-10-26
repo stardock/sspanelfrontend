@@ -15,16 +15,15 @@ Aborting
 
 update log  
 ```  
-[root@v167712 vs.stardock.cn]# git reflog
-822d3cb HEAD@{0}: pull: Fast-forward
-5cb9df0 HEAD@{1}: pull: Fast-forward
-5801a62 HEAD@{2}: pull: Fast-forward
-f38daf7 HEAD@{3}: checkout: moving from 78df3dacc56170f4ac33d27623c99767ac85b357
-78df3da HEAD@{4}: checkout: moving from 74a1afac36331ab972d62e8ed74bacdddc1ca0a0
-74a1afa HEAD@{5}: checkout: moving from dev to 74a1afa
-f38daf7 HEAD@{6}: pull: Fast-forward
-74a1afa HEAD@{7}: pull: Fast-forward
-d6861ec
+[root@naran stardock.cn]# git reflog
+7aa2e38 HEAD@{0}: checkout: moving from dev to 7aa2e38
+a54c4b7 HEAD@{1}: pull: Fast-forward
+6e68ac5 HEAD@{2}: checkout: moving from 7aa2e38522c27a58f08547c9bc85f467412e5211 to dev
+7aa2e38 HEAD@{3}: checkout: moving from dev to 7aa2e38
+6e68ac5 HEAD@{4}: pull: Fast-forward
+7aa2e38 HEAD@{5}: pull: Fast-forward
+d41166d HEAD@{6}: clone: from https://github.com/Anankke/ss-panel-v3-mod_Uim.git
+[root@naran stardock.cn]#
 ```  
 
 
